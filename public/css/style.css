@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,900;1,100&display=swap');
+
+:root {
+    --primary-color: hsla(187, 62%, 66%, 0.982);
+    --secondary-color: hsla(150, 37%, 69%, 0.993);
+    --medium-color: hsla(197, 13%, 79%, 0.886);
+    --dark-color: hsla(180, 3%, 15%, 0.798);
+    --light-color: hsla(180, 17%, 98%, 0.916);
+    --warning-color: hsla(354, 81%, 55%, 0.916);
+
+    --fontfamily-text: 'Roboto', sans-serif;
+    --fontfamily-title: 'Poppins', sans-serif;
+
+    --spaccing: 0.5rem;
+    --spaccing1: calc(var(--spaccing) * 1.6);
+    --spaccing2: calc(var(--spaccing) * 2);
+    --spaccing3: calc(var(--spaccing) * 2.6);
+
+    --border-radius: 0.5rem;
+
+    --font-size: 0.6rem;
+    --font-size1: calc(var(--font-size) * 1.4);
+    --font-size2: calc(var(--font-size) * 1.8);
+    --font-size3: calc(var(--font-size) * 2.4);
+    --font-size4: calc(var(--font-size) * 2.8);
+
+    --box-shadow: -2px 2px 8px var(--dark-color);
+    --text-shadow: 2px 2px 4px var(--dark-color);
+    --section-max-width: 65ch;
+    --header-min-height: 250px;
+
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fontfamily-text);
+    font-size: var(--font-size);
+    color: var(--dark-color);
+}

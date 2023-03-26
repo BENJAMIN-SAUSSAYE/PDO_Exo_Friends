@@ -1,0 +1,198 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    --width-form: 30vw;
+}
+
+.datas-container {
+    --width-datas: 35vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: var(--width-datas);
+
+    gap: var(--spaccing);
+    margin: var(--spaccing1) auto;
+    font-family: var(--fontfamily-text);
+    font-size: var(--font-size);
+    padding: var(--spaccing2);
+    border: 1px solid var(--medium-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: var(--spaccing);
+    margin: var(--spaccing1) auto;
+    width: var(--width-form);
+
+    font-family: var(--fontfamily-text);
+    font-size: var(--font-size);
+    padding: var(--spaccing2);
+    border: 1px solid var(--medium-color);
+    border-radius: var(--border-radius);
+    background-color: var(--primary-color);
+    box-shadow: var(--box-shadow);
+}
+
+form legend {
+    padding-bottom: var(--spaccing);
+    text-transform: uppercase;
+    font-family: var(--fontfamily-title);
+    text-shadow: var(--text-shadow);
+    color: var(--dark-color);
+}
+
+form legend h2 {
+    font-size: clamp(var(--font-size1), 4vw, var(--font-size3));
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--spaccing1);
+}
+
+form label {
+    font-size: var(--font-size2);
+    padding-bottom: var(--spaccing);
+    text-transform: capitalize;
+    color: var(--dark-color);
+    letter-spacing: calc(var(--font-size)/4);
+}
+
+form input,
+form textarea {
+    box-sizing: border-box;
+    border: 1px solid var(--medium-color);
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: var(--dark-color);
+}
+
+form textarea {
+    height: 20vh;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    accent-color: var(--dark-color);
+    resize: none;
+    border: none;
+    font-family: var(--fontfamily-text);
+    font-size: var(--font-size1);
+    padding-top: var(--spaccing1);
+    padding-left: var(--spaccing1);
+}
+
+form input {
+    background-color: var(--light-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    font-size: var(--font-size1);
+    padding: var(--spaccing1);
+    margin-bottom: var(--spaccing);
+    accent-color: var(--dark-color);
+}
+
+form input[type="tel"]+small {
+    align-self: end;
+    font-size: medium;
+    color: var(--dark-color);
+    margin-top: var(--spaccing);
+    letter-spacing: calc(var(--font-size)/3);
+}
+
+.btn {
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    font-size: var(--font-size1);
+    padding: var(--spaccing1);
+    cursor: pointer;
+    width: clamp(120px, 25vw, 180px);
+    background-color: var(--secondary-color);
+    letter-spacing: calc(var(--font-size)/5);
+    text-transform: capitalize;
+    color: var(--dark-color);
+    font-weight: 700;
+    overflow: hidden;
+    text-decoration: none;
+    margin-top: var(--spaccing2);
+    text-transform: uppercase;
+    transition: all .3s;
+}
+
+.btn:hover {
+    color: var(--light-color);
+    background: linear-gradient(90deg, var(--dark-color) 50%, hsla(0, 3%, 36%, 0.6));
+    opacity: 0.9;
+}
+
+.btn.submit {
+    align-self: flex-end;
+}
+
+select {
+    /* A reset of styles, including removing the default dropdown arrow */
+    appearance: none;
+    /* Additional resets for further consistency */
+    border: none;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+
+    font-family: var(--fontfamily-text);
+    font-size: var(--font-size1);
+    background-color: var(--dark-color);
+    color: var(--light-color);
+
+    box-shadow: var(--box-shadow);
+    padding: var(--spaccing1);
+    border-radius: var(--border-radius);
+    border-color: var(--dark-color);
+}
+
+option {
+    padding-left: var(--spaccing1);
+    background-color: var(--dark-color);
+}
+
+.mess-warning {
+    width: var(--width-form);
+    margin: var(--spaccing1) auto;
+    font-family: var(--fontfamily-text);
+    font-size: var(--font-size1);
+    padding: var(--spaccing2);
+    border: 1px solid var(--medium-color);
+    border-radius: var(--border-radius);
+    background-color: var(--medium-color);
+    box-shadow: var(--box-shadow);
+    color: var(--warning-color);
+    letter-spacing: calc(var(--font-size)/4);
+}
+
+.mess-warning ul li {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--spaccing1);
+}
